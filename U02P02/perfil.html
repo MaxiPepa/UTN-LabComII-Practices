@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <h1>Configuración del perfil</h1>
+
+    <div>
+        <form action="javascript:void(0);" method="POST" target="_blank">
+            <label for="tipoDePerfil">Tipo de Perfil</label>
+            <input type="text" placeholder="Estudiante" readonly name="tipoDePerfil" id="tipoDePerfil"><br>
+
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" name="nombreCompleto" id="nombreCompleto"><br>
+
+            <label for="email">EMail</label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0"><br>
+
+            <select name="nacionalidad" id="nacionalidad">
+                <option value="arg">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="uyu">Uruguay</option>
+                <option value="chl">Chile</option>
+            </select><br>
+
+            <select name="condLaboral" id="condLaboral">
+                <option value="Desempleado">Desempleado</option>
+                <option value="Buscando Trabajo">Buscando Trabajo</option>
+                <option value="Trabajo Part-Time">Trabajo Part-Time</option>
+                <option value="Trabajo Full-Time">Trabajo Full-Time</option>
+            </select><br>
+
+        </form>
+    </div>
+</body>
+
+</html>
