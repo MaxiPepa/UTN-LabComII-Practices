@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U04P1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenid@, indroduzca sus datos</h1>
+    </header>
+
+    <div class="dataForm">
+        <form id="form" class="data" action="#">
+            <label for="name">Nombre Completo:</label>
+            <input id="name" class="info" type="text">
+
+            <label for="age">Edad:</label>
+            <input id="age" class="info" type="number" min="0">
+
+            <label for="birthday">Fecha de nacimiento:</label>
+            <input id="birthday" class="info" type="date" max="2022-12-31">
+
+            <label for="province">Provincia:</label>
+            <select id="province" class="info">
+                <option value="" disabled selected>Seleccionar provincia</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Tierra Del Fuego">Tierra del Fuego</option>
+                <option value="Mendoza">Mendoza</option>
+            </select>
+
+            <button id="send" onclick="obtainData()">Enviar</button>
+        </form>
+    </div>
+
+    <div class="showPerson">
+        <table id="personTable">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Fecha de nacimiento</th>
+                <th>Provincia</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

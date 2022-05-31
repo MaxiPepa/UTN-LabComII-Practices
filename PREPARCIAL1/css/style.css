@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    flex-grow: 2;
+    background-color: #F0F0F0;
+    border-top: 2px solid black;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+ul li {
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:hover {
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+
+a {
+    color: black;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.active {
+    box-sizing: border-box;
+    pointer-events: none;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    height: 50px;
+    width: 180px;
+}
+
+.profile {
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+
+.profile :hover {
+    color: gray;
+}
+
+.main-image {
+    display: flex;
+    align-items: center;
+}
+
+.img-background {
+    display: flex;
+    background-image: url("../img/utn-alumnos.jpg");
+    background-repeat: no-repeat;
+    width: 200%;
+    height: 400px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    padding: 30px;
+}
